@@ -1,2 +1,2 @@
-# project2
- exploring css
+# Project-1
+Resume Website
