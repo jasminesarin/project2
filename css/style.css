@@ -70,7 +70,7 @@ body {
 			align-items: stretch;
 			margin-top: 30px;
 		}
-		.project {
+		.portfolio-item {
 			flex-basis: calc(33.33% - 20px);
 			margin-bottom: 30px;
 			background-color: #f0f0f0;
@@ -79,20 +79,20 @@ body {
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 			transition: all 0.3s ease;
 		}
-		.project:hover {
+		.portfolio-item:hover {
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 			transform: translateY(-5px);
 		}
-		.project img {
+		.portfolio-item img {
 			max-width: 100%;
 			height: auto;
 			margin-bottom: 10px;
 		}
-		.project h3 {
+		.portfolio-item h3 {
 			font-size: 18px;
 			margin-bottom: 10px;
 		}
-		.project p {
+		.portfolio-item p {
 			font-size: 14px;
 			margin-bottom: 10px;
 		}
