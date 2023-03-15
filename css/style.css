@@ -152,9 +152,7 @@ section{
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.intro{
-  
-}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -178,10 +176,12 @@ section{
 .skill h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  padding: 10px;
 }
 .skill p {
   font-size: 16px;
   margin-bottom: 10px;
+  padding: 10px;
 }
 .projects {
   display: flex;
@@ -211,8 +211,10 @@ section{
 .portfolio-item h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  padding: 10px;
 }
 .portfolio-item p {
   font-size: 16px;
   margin-bottom: 10px;
+  padding: 10px;
 }
