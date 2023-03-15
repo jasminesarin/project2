@@ -35,6 +35,7 @@ nav ul {
 nav li {
   margin: 0;
   padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 nav a {
   color: #ffffff;
@@ -54,6 +55,7 @@ h1 {
   font-size: 30px;
   color: #333;
   margin-bottom: 30px;
+  padding: 10px;
 }
 header h1{
   text-align: center;
@@ -99,7 +101,7 @@ li {
   margin-top: 30px;
 }
 .skill {
-  flex-basis: calc(33.33% - 20px);
+  flex-basis: auto;
   margin-bottom: 30px;
   background-color: #f0f0f0;
   padding: 20px;
