@@ -23,6 +23,7 @@ nav{
   color: #ffffff;
   padding: 0;
   position:relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 nav ul {
   list-style-type: none;
@@ -33,6 +34,7 @@ nav ul {
 }
 nav li {
   margin: 0;
+  padding: 10px;
 }
 nav a {
   color: #ffffff;
@@ -40,6 +42,7 @@ nav a {
   font-size: 18px;
   font-weight: bold;
   transition: all 0.3s;
+  padding:0,10px;
 }
 nav a:hover {
   color: #999999;
@@ -47,6 +50,7 @@ nav a:hover {
 h1 {
   font-size: 30px;
   color: #333;
+  margin-bottom: 30px;
 }
 header h1{
   text-align: center;
@@ -55,6 +59,7 @@ header h1{
   font-size:80px;
   font-weight:400;
   color: #FFFFFF;
+  padding:10px;
   margin:0;
 }
 h2 {
