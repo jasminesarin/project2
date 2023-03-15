@@ -88,6 +88,12 @@ li {
   margin-bottom: 5px;
   color: #555;
 }
+#dp{
+  position:relative;
+  float: left;
+  width:40%;
+  padding:10px;
+  }
 section{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfff4+0,e9e9ce+100;Wax+3D+%232 */
   background: rgb(252,255,244); /* Old browsers */
@@ -102,6 +108,8 @@ section{
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position:relative;
+  float: left;
 }
 .section {
   margin-top: 30px;
