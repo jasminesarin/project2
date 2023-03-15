@@ -101,7 +101,7 @@ li {
   margin-top: 30px;
 }
 .skill {
-  flex-basis: auto;
+  flex-basis: calc(50% - 20px);
   margin-bottom: 30px;
   background-color: #f0f0f0;
   padding: 20px;
