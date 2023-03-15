@@ -92,7 +92,6 @@ li {
   position: relative;
   width: 40%;
   float: left;
-  padding:10px;
 }
  .dp img{
   display:block;
@@ -139,8 +138,9 @@ section{
   display: block;
   position:relative;
   float: left;
-  width: 40%;
+  width: 50%;
   background-color:#fff;
+  margin-left:20px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
