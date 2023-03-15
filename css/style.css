@@ -109,8 +109,7 @@ li {
   height: 0;
   border-radius: 5px;
   transition: .5s ease;
-  margin-left:20px;
- }
+}
 .dp:hover .overlay {
   bottom: 0;
   height: 100%;
