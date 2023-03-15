@@ -67,9 +67,6 @@ header h1{
   padding:20px;
   margin:0;
 }
-#about_me h1{
-  margin-left:20px:
- }
 h2 {
   font-size: 20px;
   margin-top: 30px;
@@ -89,6 +86,9 @@ li {
   margin-bottom: 5px;
   color: #555;
 }
+#about_me{
+  margin-left:20px:
+ }
 .dp{
   position: relative;
   width: 40%;
