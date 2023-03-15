@@ -35,7 +35,6 @@ nav ul {
 nav li {
   margin: 0;
   padding: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 nav a {
   color: #ffffff;
@@ -47,6 +46,7 @@ nav a {
 }
 nav a:hover {
   color: #999999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 main{
   position: relative;
@@ -72,10 +72,12 @@ h2 {
   margin-top: 30px;
   margin-bottom: 10px;
   color: #333;
+  padding: 10px;
 }
 p {
   margin-bottom: 10px;
   color: #555;
+  padding: 10px;
 }
 ul {
   list-style: none;
@@ -86,12 +88,30 @@ li {
   margin-bottom: 5px;
   color: #555;
 }
+section{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfff4+0,e9e9ce+100;Wax+3D+%232 */
+  background: rgb(252,255,244); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 ); /* IE6-9 */
+
+  display: block;
+  background-color:#fff;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .section {
   margin-top: 30px;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.intro{
+  
 }
 .skills {
   display: flex;
