@@ -110,7 +110,7 @@ li {
   height: 0;
   transition: .5s ease;
 }
-.container:hover .overlay {
+.dp:hover .overlay {
   bottom: 0;
   height: 100%;
 }
@@ -135,13 +135,14 @@ section{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 ); /* IE6-9 */
 
   display: block;
+  position:relative;
+  float: left;
+  width: 40%;
   background-color:#fff;
   margin-top: 30px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position:relative;
-  float: left;
 }
 .section {
   margin-top: 30px;
