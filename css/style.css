@@ -221,3 +221,24 @@ section{
   margin-bottom: 10px;
   padding: 10px;
 }
+
+/* Media Queries- Mobile First */
+
+/* Mobile Styles */
+.section {
+	padding: 20px;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+	.section {
+		padding: 40px;
+	}
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+	.section {
+		padding: 60px;
+	}
+}
