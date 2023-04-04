@@ -1,8 +1,4 @@
-body {
-  font-family: Avenir, sans-serif;
-  padding: 0;
-  background-color: #f0f0f0;
-}
+/* Styling the header*/
 header{
   display: inline-block;
   top: 0;
@@ -17,6 +13,16 @@ header{
   background-color: #000000;
   margin:0;
   padding: 0;
+}
+header h1{
+  text-align: center;
+  padding: 0;
+  font-family: 'Comforter Brush', cursive;
+  font-size:80px;
+  font-weight:400;
+  color: #FFFFFF;
+  padding:20px;
+  margin:0;
 }
 nav{
   background-color: #333333;
@@ -48,6 +54,14 @@ nav a:hover {
   color: #999999;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Styling the Body*/
+
+body {
+  font-family: Avenir, sans-serif;
+  padding: 0;
+  background-color: #f0f0f0;
+}
 main{
   position: relative;
 }
@@ -57,16 +71,7 @@ h1 {
   margin-bottom: 30px;
   padding: 10px;
 }
-header h1{
-  text-align: center;
-  padding: 0;
-  font-family: 'Comforter Brush', cursive;
-  font-size:80px;
-  font-weight:400;
-  color: #FFFFFF;
-  padding:20px;
-  margin:0;
-}
+
 h2 {
   font-size: 20px;
   margin-top: 30px;
@@ -136,8 +141,6 @@ section{
   background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 38%,rgba(237,237,237,1) 63%,rgba(247,247,247,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 38%,rgba(237,237,237,1) 63%,rgba(247,247,247,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
   display: block;
   position:relative;
   float: left;
@@ -155,7 +158,6 @@ section{
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -220,25 +222,4 @@ section{
   font-size: 16px;
   margin-bottom: 10px;
   padding: 10px;
-}
-
-/* Media Queries- Mobile First */
-
-/* Mobile Styles */
-.section {
-	padding: 20px;
-}
-
-/* Tablet Styles */
-@media (min-width: 768px) {
-	.section {
-		padding: 40px;
-	}
-}
-
-/* Desktop Styles */
-@media (min-width: 1024px) {
-	.section {
-		padding: 60px;
-	}
 }
