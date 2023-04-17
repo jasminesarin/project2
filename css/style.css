@@ -221,3 +221,6 @@ section{
   margin-bottom: 10px;
   padding: 10px;
 }
+#map {
+  height: 100%;
+}
