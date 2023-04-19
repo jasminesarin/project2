@@ -1,17 +1,12 @@
 // Initialize and add the map
-function initMap() {
-  // The location of ID
-  const position = { lat: 41.8369733, lng: -87.6282752 };
-  // Request needed libraries.
-  //@ts-ignore
-  //const { Map } = await google.maps.importLibrary("maps");
-  //const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+let map;
 
-  // The map, centered at ID
+function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-   });
+    center: new google.maps.LatLng(-41.8369733, 87.6282752),
+    zoom: 16,
+  });
+
 
   // The marker, positioned at ID
   const iconImage= 'media/icon.png'  
