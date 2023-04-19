@@ -1,62 +1,28 @@
+
+// Initialize and add the map
 let map;
-let infoWindow;
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 5,
-    center: { lat: 41.837, lng: -87.628}, 
-    mapTypeId: "terrain",
+async function initMap() {
+  // The location of ID 41.83748488024708, -87.62810353863021
+  const position = { lat: 41.837, lng: -87.628 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+
+  // The map, centered at ID
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "MAP_ID",
   });
 
-  // Define the LatLng coordinates for the polygon.
-  const rectangleCoords = [
-    { lat: 41.839, lng: -87.629 }, 
-    { lat: 41.839, lng: -87.623 }, 
-    { lat: 41.831, lng: -87.623 }, 
-    { lat: 41.830, lng: -87.629 },
-  ];
-  // Construct the polygon.
-  const collegeSquare = new google.maps.Polygon({
-    paths: rectangleCoords,
-    strokeColor: "#FF0000",
-    strokeOpacity: 0.8,
-    strokeWeight: 3,
-    fillColor: "#FF0000",
-    fillOpacity: 0.35,
+  // The marker, positioned at ID
+  const marker = new AdvancedMarkerView({
+    map: map,
+    position: position,
+    title: "ID",
   });
-
-  collegeSquare.setMap(map);
-  // Add a listener for the click event.
-  collegeSquare.addListener("click", showArrays);
-  infoWindow = new google.maps.InfoWindow();
 }
 
-function showArrays(event) {
-  // Since this polygon has only one path, we can call getPath() to return the
-  // MVCArray of LatLngs.
-  // @ts-ignore
-  const polygon = this;
-  const vertices = polygon.getPath();
-  let contentString =
-    "<b>College Square polygon</b><br>" +
-    "Clicked location: <br>" +
-    event.latLng.lat() +
-    "," +
-    event.latLng.lng() +
-    "<br>";
-
-  // Iterate over the vertices.
-  for (let i = 0; i < vertices.getLength(); i++) {
-    const xy = vertices.getAt(i);
-
-    contentString +=
-     "<br>" + "Coordinate " + i + ":<br>" + xy.lat() + "," + xy.lng();
-  }
-
-  // Replace the info window's content and position.
-  infoWindow.setContent(contentString);
-  infoWindow.setPosition(event.latLng);
-  infoWindow.open(map);
-}
-
-window.initMap = initMap;
+initMap();
