@@ -1,27 +1,31 @@
 // Initialize and add the map
 let map;
 
-async function initMap() {
-  // The location of ID 41.83748488024708, -87.62810353863021
-  const position = { lat: 41.837, lng: -87.628 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
-
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "MAP_ID",
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    position: new google.maps.LatLng(-41.8369733, 87.6282752),
+    zoom: 16,
   });
 
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerView({
+  // The marker, positioned at ID
+  const iconImage = "media/icon.png";
+  let marker = google.maps.Marker;
+  marker = new google.maps.Marker({
     map: map,
+    draggable: true,
+    icon: iconImage,
+    animation: google.maps.Animation.DROP,
     position: position,
-    title: "ID",
   });
+  marker.addListener("click", toggleBounce);
+
+  function toggleBounce() {
+    if (marker.getAnimation() !== null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
 }
 
 initMap();
