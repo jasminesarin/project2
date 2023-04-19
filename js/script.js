@@ -38,19 +38,19 @@ function showArrays(event) {
   const polygon = this;
   const vertices = polygon.getPath();
   let contentString =
-    "<b>College Square polygon</b>" +
-    "Clicked location: " +
+    "<b>College Square polygon</b><br>" +
+    "Clicked location: <br>" +
     event.latLng.lat() +
     "," +
     event.latLng.lng() +
-    " ";
+    "<br>";
 
   // Iterate over the vertices.
   for (let i = 0; i < vertices.getLength(); i++) {
     const xy = vertices.getAt(i);
 
     contentString +=
-      " " + "Coordinate " + i + ":  " + xy.lat() + "," + xy.lng();
+     "<br>" + "Coordinate " + i + ":<br>" + xy.lat() + "," + xy.lng();
   }
 
   // Replace the info window's content and position.
@@ -60,3 +60,4 @@ function showArrays(event) {
 }
 
 window.initMap = initMap;
+
