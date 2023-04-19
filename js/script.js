@@ -7,12 +7,11 @@ function initMap() {
     zoom: 16,
   });
 
-
   // The marker, positioned at ID
-  const iconImage= 'media/icon.png'  
-  let marker= google.maps.Marker;
+  const iconImage = "media/icon.png";
+  let marker = google.maps.Marker;
   marker = new google.maps.Marker({
-    map:map,
+    map: map,
     draggable: true,
     icon: iconImage,
     animation: google.maps.Animation.DROP,
@@ -26,7 +25,7 @@ function initMap() {
     } else {
       marker.setAnimation(google.maps.Animation.BOUNCE);
     }
-  }                         
+  }
 }
 
 initMap();
