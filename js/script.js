@@ -24,7 +24,20 @@ async function initMap() {
     map: map,
     icon: image,
     title: "ID"
+    draggable: true,
+    //adding animation to the marker
+    animation: google.maps.Animation.DROP,
   });
+  
+  //adding event listener to animate to the marker
+  marker.addListener("click", toggleBounce);
+  
+  function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
   // The marker, positioned at ID
   //const marker = new AdvancedMarkerView({
    // map: map,
