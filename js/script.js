@@ -24,7 +24,7 @@ async function initMap() {
     map: map,
     icon: image,
     title: "ID"
-    draggable: true,
+    //draggable: true,
     //adding animation to the marker
     animation: google.maps.Animation.DROP,
   });
