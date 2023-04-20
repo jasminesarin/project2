@@ -12,7 +12,7 @@ async function initMap() {
 
   // The map, centered at ID
   map = new Map(document.getElementById("map"), {
-    zoom: 12,
+    zoom: 15,
     center: position,
     mapId: "MAP_ID",
   });
