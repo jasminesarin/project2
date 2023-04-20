@@ -17,12 +17,20 @@ async function initMap() {
     mapId: "MAP_ID",
   });
 
-  // The marker, positioned at ID
-  const marker = new AdvancedMarkerView({
-    map: map,
+    // The marker, positioned at ID
+  const image = "media/icon_ID2.png";
+  const collegeMarker = new google.maps.Marker({
     position: position,
-    title: "ID",
+    map: map,
+    icon: image,
+    title: "ID"
   });
+  // The marker, positioned at ID
+  //const marker = new AdvancedMarkerView({
+   // map: map,
+   // position: position,
+   // title: "ID",
+  //});
 }
 
 initMap();
