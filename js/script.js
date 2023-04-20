@@ -23,8 +23,8 @@ async function initMap() {
     position: position,
     map: map,
     icon: image,
-    title: "ID"
-    //draggable: true,
+    title: "ID",
+    draggable: true,
     //adding animation to the marker
     animation: google.maps.Animation.DROP,
   });
