@@ -30,13 +30,13 @@ async function initMap() {
   });
   
   //adding event listener to animate to the marker
-  marker.addListener("click", toggleBounce);
+  collegeMarker.addListener("click", toggleBounce);
   
-  function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
+  function toggleBounce(){
+  if (collegeMarker.getAnimation() !== null) {
+    collegeMarker.setAnimation(null);
   } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
+    collegeMarker.setAnimation(google.maps.Animation.BOUNCE);
   }
   // The marker, positioned at ID
   //const marker = new AdvancedMarkerView({
