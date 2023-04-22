@@ -1,4 +1,3 @@
-
 // Initialize and add the map
 let map;
 
@@ -18,33 +17,19 @@ async function initMap() {
   });
 
     // The marker, positioned at ID
-  const image = "media/icon_ID_2.png";
+  const image = "media/icon_ID2.png";
   const collegeMarker = new google.maps.Marker({
     position: position,
     map: map,
     icon: image,
-    title: "ID",
-    draggable: true,
-    //adding animation to the marker
-    //animation: google.maps.Animation.DROP,
+    title: "ID"
   });
-  
-  //adding event listener to animate to the marker
-//   collegeMarker.addListener("click", toggleBounce);
-  
-//   function toggleBounce(){
-//   if (collegeMarker.getAnimation() !== null) {
-//     collegeMarker.setAnimation(null);
-//   } else {
-//     collegeMarker.setAnimation(google.maps.Animation.BOUNCE);
-//   }
   // The marker, positioned at ID
   //const marker = new AdvancedMarkerView({
    // map: map,
    // position: position,
    // title: "ID",
   //});
-  //}    
 }
 
-window.initMap = initMap;
+initMap();
