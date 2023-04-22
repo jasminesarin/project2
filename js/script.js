@@ -17,7 +17,7 @@ async function initMap() {
   });
 
     // The marker, positioned at ID
-  const image = "media/icon_ID2.png";
+  const image = "media/icon_ID_2.png";
   const collegeMarker = new google.maps.Marker({
     position: position,
     map: map,
