@@ -44,7 +44,7 @@ async function initMap() {
    // position: position,
    // title: "ID",
   //});
-  }    
+  //}    
 }
 
 window.initMap = initMap;
