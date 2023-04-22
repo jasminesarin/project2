@@ -33,7 +33,7 @@ async function initMap() {
     icon: image2,
     title: "MTCC"
   });
-  
+   
   ////Adding a third marker
   const image3 = "media/icon_DORM.jpg";
   const dormMarker = new google.maps.Marker({
@@ -42,6 +42,18 @@ async function initMap() {
     icon: image3,
     title: "DORM"
   });
+
+
+////41.8309797118452, -87.62681831845501
+//Adding a 4th marker
+  const image4 = "media/icon_STARB.png";
+  const dormMarker = new google.maps.Marker({
+    position: { lat: 41.831, lng: -87.626 },
+    map: map,
+    icon: image4,
+    title: "STARBUCKS"
+  });
 }
+
 
 initMap();
