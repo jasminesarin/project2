@@ -24,12 +24,16 @@ async function initMap() {
     icon: image,
     title: "ID"
   });
-  // The marker, positioned at ID
-  //const marker = new AdvancedMarkerView({
-   // map: map,
-   // position: position,
-   // title: "ID",
-  //});
+  
+  //Adding a second marker
+  const image = "media/icon_MTCC.png";
+  const collegeMarker = new google.maps.Marker({
+    position: { lat: 41.835, lng: -87.625 },
+    map: map,
+    icon: image,
+    title: "ID"
+  });
+  
 }
 
 initMap();
