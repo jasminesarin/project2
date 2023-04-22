@@ -26,12 +26,12 @@ async function initMap() {
   });
   
   //Adding a second marker
-  const image = "media/icon_MTCC.png";
-  const collegeMarker = new google.maps.Marker({
+  const image2 = "media/icon_MTCC.png";
+  const mtccMarker = new google.maps.Marker({
     position: { lat: 41.835, lng: -87.625 },
     map: map,
-    icon: image,
-    title: "ID"
+    icon: image2,
+    title: "MTCC"
   });
   
 }
