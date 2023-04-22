@@ -34,6 +34,14 @@ async function initMap() {
     title: "MTCC"
   });
   
+  ////Adding a third marker
+  const image3 = "media/icon_DORM.jpg";
+  const dormMarker = new google.maps.Marker({
+    position: { lat: 41.833, lng: -87.626 },
+    map: map,
+    icon: image3,
+    title: "DORM"
+  });
 }
 
 initMap();
