@@ -2,8 +2,9 @@
 let map;
 
 async function initMap() {
+  
   // The location of ID 41.83748488024708, -87.62810353863021
-  const position = { lat: 41.837, lng: -87.628 };
+  const position = { lat: 41.83748488024708, lng: -87.62810353863021 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
@@ -15,7 +16,9 @@ async function initMap() {
     center: position,
     mapId: "MAP_ID",
     
-  }); //content box 
+  }); 
+  
+  //creating a content box with info about ID and a wiki link 
   const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
@@ -36,6 +39,7 @@ async function initMap() {
     ariaLabel: "ID",
   });
 
+  
  //Polygon overlay 
   const polygonCoords = [
     { lat: 41.8394663080058, lng: -87.63006892091917 },
@@ -43,6 +47,7 @@ async function initMap() {
     { lat: 41.831076229105406, lng: -87.62327392348134 },
     { lat: 41.831046046955656, lng: -87.62984613409192 },
   ];
+  
   // Construct the polygon.
   const collegePolygon = new google.maps.Polygon({
     paths: polygonCoords,
@@ -55,7 +60,7 @@ async function initMap() {
 
   collegePolygon.setMap(map);
   
-    // The marker, positioned at ID
+  // The marker, positioned at ID
   const image = "media/icon_ID_2.png";
   const collegeMarker = new google.maps.Marker({
     position: position,
@@ -65,7 +70,8 @@ async function initMap() {
     animation: google.maps.Animation.DROP,
   });
   
-    
+  
+ //click listener event to open info window   
   map.addListener('click', (mapsMouseEvent) =>  {
     infowindow.open({
     anchor: collegeMarker,
@@ -81,8 +87,7 @@ async function initMap() {
     icon: image2,
     title: "MTCC - COMMONS",
     animation: google.maps.Animation.DROP,
-    
-  });
+   });
    
   ////Adding a third marker
   const image3 = "media/icon_DORM.jpg";
@@ -92,11 +97,9 @@ async function initMap() {
     icon: image3,
     title: "DORM - ROWE VILLAGE",
     animation: google.maps.Animation.DROP,
-    
-  });
+   });
 
 
-////41.8309797118452, -87.62681831845501
 //Adding a 4th marker
   const image4 = "media/icon_STARB.png";
   const starMarker = new google.maps.Marker({
@@ -105,7 +108,6 @@ async function initMap() {
     icon: image4,
     title: "STARBUCKS",
     animation: google.maps.Animation.DROP,
-    
   });
   
   //Added biking layer
