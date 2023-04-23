@@ -15,8 +15,25 @@ async function initMap() {
     center: position,
     mapId: "MAP_ID",
     
+  }); //   is a graduate school teaching systemic, human-centered design. 
+  const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Institute of Design</h1>' +
+    '<div id="bodyContent">' +
+    "<p><b>Institute of Design</b>, at the Illinois Institute of Technology, " +
+    "founded as the New Bauhaus, is a graduate school" +
+    "teaching systemic, human-centered design. " +
+    "3137 S Federal St, Chicago, IL 60616 </p>" +
+    '<p>Attribution: ID, <a href="https://en.wikipedia.org/wiki/IIT_Institute_of_Design">' +
+    "https://en.wikipedia.org/wiki/IIT_Institute_of_Design</a></p>" +
+    "</div>" +
+    "</div>";
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "ID",
   });
-
     // The marker, positioned at ID
   const image = "media/icon_ID_2.png";
   const collegeMarker = new google.maps.Marker({
