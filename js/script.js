@@ -72,14 +72,13 @@ async function initMap() {
   });
   
   collegeMarker.addListener("click", toggleBounce1);
-  
-  function toggleBounce1() {
-    if (collegeMarker.getAnimation() !== null) {
-      collegeMarker.setAnimation(null);
-    } else {
-      collegeMarker.setAnimation(google.maps.Animation.BOUNCE);
+     function toggleBounce1() {
+      if (collegeMarker.getAnimation() !== null) {
+        collegeMarker.setAnimation(null);
+      } else {
+        collegeMarker.setAnimation(google.maps.Animation.BOUNCE);
+      }
     }
-  }
   
  //click listener event to open info window   
   map.addListener('click', (mapsMouseEvent) =>  {
@@ -100,14 +99,13 @@ async function initMap() {
    });
   
   mtccMarker.addListener("click", toggleBounce2);
-  
-  function toggleBounce2() {
-    if (mtccMarker.getAnimation() !== null) {
-      mtccMarker.setAnimation(null);
-    } else {
-      mtccMarker.setAnimation(google.maps.Animation.BOUNCE);
-    }
-  }
+      function toggleBounce2() {
+        if (mtccMarker.getAnimation() !== null) {
+          mtccMarker.setAnimation(null);
+        } else {
+          mtccMarker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
   
   ////Adding a third marker
   const image3 = "media/icon_DORM.jpg";
@@ -119,7 +117,14 @@ async function initMap() {
     animation: google.maps.Animation.DROP,
    });
 
-  dormMarker.addListener("click", toggleBounce);
+  dormMarker.addListener("click", toggleBounce3);
+    function toggleBounce3() {
+      if (dormMarker.getAnimation() !== null) {
+        dormMarker.setAnimation(null);
+      } else {
+        dormMarker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
 
   //Adding a 4th marker
   const image4 = "media/icon_STARB.png";
@@ -131,7 +136,14 @@ async function initMap() {
     animation: google.maps.Animation.DROP,
   });
   
-  starMarker.addListener("click", toggleBounce);
+  starMarker.addListener("click", toggleBounce4);
+    function toggleBounce4() {
+      if (starMarker.getAnimation() !== null) {
+        starMarker.setAnimation(null);
+      } else {
+        starMarker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
   
   //Added biking layer
   const bikeLayer = new google.maps.BicyclingLayer();
