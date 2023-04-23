@@ -75,7 +75,7 @@ h1 {
   padding: 10px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
   color: #333;
@@ -84,6 +84,7 @@ p {
   margin-bottom: 10px;
   color: #555;
   margin-left:10px;
+  font-size:20px;
 }
 ul {
   list-style: none;
@@ -132,7 +133,7 @@ li {
 .text {
   white-space: nowrap; 
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -171,10 +172,10 @@ section{
   margin-top: 30px;
 }
 .skill {
-  flex-basis: calc(50% - 100px);
+  flex-basis: calc(50%);
   margin-bottom: 30px;
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 0px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -268,6 +269,9 @@ section{
   .text{
     font-size: 30px;
   }
+  h2 {
+   font-size: 20px;
+  }
   .dp{
     width: 40%;
     margin-left:20px;
@@ -344,4 +348,9 @@ section{
   h1 {
   font-size: 30px;
   }
+  .skill {
+  flex-basis: calc(50% - 100px);
+  margin-bottom: 30px;
+  padding: 20px;
+}
 }
