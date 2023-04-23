@@ -250,7 +250,7 @@ section{
   align-items: center;
   width: 120px;
   height: 120px;
-  margin: 0 20px;
+  margin: 0 10px;
   border-radius: 50%;
   font-size: 16px;
   color: #fff;
@@ -258,6 +258,11 @@ section{
   text-decoration: none;
 }
 
+.social-button h2{
+ font-size: 24px;
+ justify-content: center;
+ align-items: center; 
+}
 .social-button:hover {
   background-color: #666;
 }
