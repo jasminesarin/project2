@@ -42,7 +42,7 @@ async function initMap() {
     position: position,
     map: map,
     icon: image,
-    title: "ID"
+    title: "ID",
     animation: google.maps.Animation.DROP,
   });
   
@@ -59,7 +59,7 @@ async function initMap() {
     position: { lat: 41.835, lng: -87.625 },
     map: map,
     icon: image2,
-    title: "MTCC"
+    title: "MTCC",
     animation: google.maps.Animation.DROP,
     
   });
@@ -70,7 +70,7 @@ async function initMap() {
     position: { lat: 41.833, lng: -87.626 },
     map: map,
     icon: image3,
-    title: "DORM"
+    title: "DORM",
     animation: google.maps.Animation.DROP,
     
   });
@@ -83,7 +83,7 @@ async function initMap() {
     position: { lat: 41.831, lng: -87.626 },
     map: map,
     icon: image4,
-    title: "STARBUCKS"
+    title: "STARBUCKS",
     animation: google.maps.Animation.DROP,
     
   });
