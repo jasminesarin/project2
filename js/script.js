@@ -70,7 +70,14 @@ async function initMap() {
     title: "ID - MY COLLEGE",
     animation: google.maps.Animation.DROP,
   });
-  collegeMarker.addListener("click", toggleBounce);
+  collegeMarker.addListener("click", toggleBounce1);
+  
+  function toggleBounce1() {
+  if (collegeMarker.getAnimation() !== null) {
+    collegeMarker.setAnimation(null);
+  } else {
+    collegeMarker.setAnimation(google.maps.Animation.BOUNCE);
+  }
   
  //click listener event to open info window   
   map.addListener('click', (mapsMouseEvent) =>  {
@@ -90,7 +97,14 @@ async function initMap() {
     animation: google.maps.Animation.DROP,
    });
   
-  mtccMarker.addListener("click", toggleBounce);
+  mtccMarker.addListener("click", toggleBounce2);
+  
+      function toggleBounce2() {
+  if (mtccMarker.getAnimation() !== null) {
+    mtccMarker.setAnimation(null);
+  } else {
+    mtccMarker.setAnimation(google.maps.Animation.BOUNCE);
+  }
   
   ////Adding a third marker
   const image3 = "media/icon_DORM.jpg";
@@ -162,13 +176,13 @@ async function initMap() {
 }
 
 //calling another fuction to set toggle bounce
-marker= ['collegeMarker', 'mtccMarker', 'dormMarker', 'starMarker'];
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
+// marker= ['collegeMarker', 'mtccMarker', 'dormMarker', 'starMarker'];
+// function toggleBounce() {
+//   if (marker.getAnimation() !== null) {
+//     marker.setAnimation(null);
+//   } else {
+//     marker.setAnimation(google.maps.Animation.BOUNCE);
+//   }
+// }
 
 initMap();
