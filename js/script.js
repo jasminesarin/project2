@@ -203,13 +203,13 @@ async function initMap() {
     // Open a new window with the social media profile
     switch (network) {
       case 'facebook':
-        window.open('https://www.facebook.com/YourFacebookPage', '_blank');
+        window.open('https://www.facebook.com/jasmine.sarin', '_blank');
         break;
       case 'instagram':
-        window.open('https://www.instagram.com/YourInstagramPage', '_blank');
+        window.open('https://www.instagram.com/jasminesarin/?hl=en', '_blank');
         break;
       case 'linkedin':
-        window.open('https://www.linkedin.com/company/YourLinkedInPage', '_blank');
+        window.open('https://www.linkedin.com/in/sarinjasmine/', '_blank');
         break;
     }
   }
