@@ -235,3 +235,40 @@ section{
   text-align: center;
   font-size: 24;
 }
+
+/*social media icons*/
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+}
+
+.social-button:hover {
+  background-color: #666;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
