@@ -40,7 +40,8 @@ nav ul {
 }
 nav li {
   margin: 0;
-  padding: 10px;
+  padding: 5px;
+  font-size:30px;
 }
 nav a {
   color: #ffffff;
@@ -268,6 +269,11 @@ section{
   font-weight: bold;
   transition: all 0.3s;
   padding:0 10px;
+  }
+  nav li {
+  margin: 0;
+  padding: 10px;
+  font-size:16px;
   }
   
   /* Adjust width and padding of main content  */
