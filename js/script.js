@@ -43,13 +43,14 @@ async function initMap() {
     map: map,
     icon: image,
     title: "ID"
-   addListener("click", () => {
+  });
+  
+  collegeMarker.addEventListener("click", () => {
     infowindow.open({
-    anchor: collegeMarker,
+    anchor: null,
+    map,
     });
   });
-});
-  
   
   //Adding a second marker
   const image2 = "media/icon_MTCC.png";
