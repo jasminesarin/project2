@@ -161,7 +161,7 @@ async function initMap() {
 }
 
 //calling another fuction to set toggle bounce
-var marker= [collegeMarker, mtccMarker, dormMarker, starMarker];
+//var marker= [collegeMarker, mtccMarker, dormMarker, starMarker];
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
     marker.setAnimation(null);
