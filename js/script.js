@@ -187,17 +187,6 @@ async function initMap() {
     title: "GOING TO ID",
     animation: google.maps.Animation.DROP,
   });
-
 }
-
-//calling another fuction to set toggle bounce
-// marker= ['collegeMarker', 'mtccMarker', 'dormMarker', 'starMarker'];
-// function toggleBounce() {
-//   if (marker.getAnimation() !== null) {
-//     marker.setAnimation(null);
-//   } else {
-//     marker.setAnimation(google.maps.Animation.BOUNCE);
-//   }
-// }
 
 initMap();
