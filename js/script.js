@@ -43,9 +43,12 @@ async function initMap() {
     map: map,
     icon: image,
     title: "ID"
-    addEventListener("click",()=>{
-    anchor:collegeMarker,}
+   addListener("click", () => {
+    infowindow.open({
+    anchor: collegeMarker,
+    });
   });
+});
   
   
   //Adding a second marker
@@ -79,8 +82,6 @@ async function initMap() {
     title: "STARBUCKS"
     
   });
-
-  
 }
 
 
