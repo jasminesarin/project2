@@ -89,11 +89,10 @@ async function initMap() {
     
   });
   
-    // Show Lat/Lng from a Click Event and show them in page, inspired by sample API
-//   map.addListener('click', (mapsMouseEvent) => {
-//     const information = document.getElementById('info')
-//     info.innerText = `content`
-//   })
+  //Added biking layer
+  const bikeLayer = new google.maps.BicyclingLayer();
+
+  bikeLayer.setMap(map);
 }
 
 
