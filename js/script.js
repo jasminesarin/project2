@@ -70,13 +70,15 @@ async function initMap() {
     title: "ID - MY COLLEGE",
     animation: google.maps.Animation.DROP,
   });
+  
   collegeMarker.addListener("click", toggleBounce1);
   
   function toggleBounce1() {
-  if (collegeMarker.getAnimation() !== null) {
-    collegeMarker.setAnimation(null);
-  } else {
-    collegeMarker.setAnimation(google.maps.Animation.BOUNCE);
+    if (collegeMarker.getAnimation() !== null) {
+      collegeMarker.setAnimation(null);
+    } else {
+      collegeMarker.setAnimation(google.maps.Animation.BOUNCE);
+    }
   }
   
  //click listener event to open info window   
@@ -99,11 +101,12 @@ async function initMap() {
   
   mtccMarker.addListener("click", toggleBounce2);
   
-      function toggleBounce2() {
-  if (mtccMarker.getAnimation() !== null) {
-    mtccMarker.setAnimation(null);
-  } else {
-    mtccMarker.setAnimation(google.maps.Animation.BOUNCE);
+  function toggleBounce2() {
+    if (mtccMarker.getAnimation() !== null) {
+      mtccMarker.setAnimation(null);
+    } else {
+      mtccMarker.setAnimation(google.maps.Animation.BOUNCE);
+    }
   }
   
   ////Adding a third marker
