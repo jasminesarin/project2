@@ -45,7 +45,7 @@ async function initMap() {
     title: "ID"
   });
   
-  collegeMarker.addEventListener("click", () => {
+  collegeMarker.addListener("click", () => {
     infowindow.open({
     anchor: null,
     map,
