@@ -60,10 +60,10 @@ async function initMap() {
 
   collegePolygon.setMap(map);
   
-  // The marker, positioned at ID
+  // The marker, positioned at ID 41.8376767217854, -87.6282752
   const image = "media/icon_ID_2.png";
   const collegeMarker = new google.maps.Marker({
-    position: position,
+    position: { lat: 41.8376767217854, lng: -87.6282752 },
     map: map,
     icon: image,
     title: "ID - MY COLLEGE",
@@ -114,6 +114,24 @@ async function initMap() {
   const bikeLayer = new google.maps.BicyclingLayer();
 
   bikeLayer.setMap(map);
+  
+  //Daily path to ID
+  const walkPlanCoordinates = [
+    { lat: 41.833, lng: -87.626 },
+    { lat: 41.835, lng: -87.625 },
+    { lat: 41.8376767217854, lng: -87.6282752 },
+    { lat: -27.467, lng: 153.027 },
+  ];
+  const walkPath = new google.maps.Polyline({
+    path: walkPlanCoordinates,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+
+  flightPath.setMap(map);
+}
 }
 
 
