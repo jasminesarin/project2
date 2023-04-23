@@ -11,7 +11,7 @@ async function initMap() {
 
   // The map, centered at ID
   map = new Map(document.getElementById("map"), {
-    zoom: 15,
+    zoom: 17,
     center: position,
     mapId: "MAP_ID",
     
@@ -42,7 +42,7 @@ async function initMap() {
     position: position,
     map: map,
     icon: image,
-    title: "ID",
+    title: "ID - MY COLLEGE",
     animation: google.maps.Animation.DROP,
   });
   
@@ -60,7 +60,7 @@ async function initMap() {
     position: { lat: 41.835, lng: -87.625 },
     map: map,
     icon: image2,
-    title: "MTCC",
+    title: "MTCC - COMMONS",
     animation: google.maps.Animation.DROP,
     
   });
@@ -71,7 +71,7 @@ async function initMap() {
     position: { lat: 41.833, lng: -87.626 },
     map: map,
     icon: image3,
-    title: "DORM",
+    title: "DORM - ROWE VILLAGE",
     animation: google.maps.Animation.DROP,
     
   });
