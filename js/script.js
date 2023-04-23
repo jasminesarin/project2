@@ -44,9 +44,9 @@ async function initMap() {
     icon: image,
     title: "ID"
     
- Marker.addListener("click", () => {
+ google.maps.Marker.addListener("click", () => {
     infowindow.open({
-      anchor: Marker,
+      anchor: marker,
       map,
     });   
   });
