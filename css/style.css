@@ -45,7 +45,7 @@ nav li {
 nav a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   transition: all 0.3s;
   padding:0 10px;
@@ -64,6 +64,8 @@ body {
 }
 main{
   position: relative;
+  padding:20px;
+  width:100%;
 }
 h1 {
   font-size: 30px;
@@ -95,7 +97,7 @@ li {
   position: relative;
   width: 100%;
   float: left;
-  margin-left:10px;
+  margin-left:0px;
   }
  .dp img{
   display:block;
@@ -151,7 +153,7 @@ section{
 .section {
   margin-top: 30px;
   background-color: #fff;
-  padding: 20px;
+  padding: 0px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -254,7 +256,16 @@ section{
     line-height: 1.8;
   }
 
-  /* Adjust width and padding of main content container */
+  nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s;
+  padding:0 10px;
+}
+  
+  /* Adjust width and padding of main content  */
   main {
     width: 70%;
     padding: 40px;
@@ -269,4 +280,11 @@ section{
  .dp img{
   width: 100%;
   } 
+  .section {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 }
