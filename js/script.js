@@ -43,6 +43,7 @@ async function initMap() {
     map: map,
     icon: image,
     title: "ID"
+    animation: google.maps.Animation.DROP,
   });
   
   collegeMarker.addListener("click", () => {
@@ -59,6 +60,7 @@ async function initMap() {
     map: map,
     icon: image2,
     title: "MTCC"
+    animation: google.maps.Animation.DROP,
     
   });
    
@@ -69,6 +71,7 @@ async function initMap() {
     map: map,
     icon: image3,
     title: "DORM"
+    animation: google.maps.Animation.DROP,
     
   });
 
@@ -81,6 +84,7 @@ async function initMap() {
     map: map,
     icon: image4,
     title: "STARBUCKS"
+    animation: google.maps.Animation.DROP,
     
   });
 }
