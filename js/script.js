@@ -140,7 +140,7 @@ async function initMap() {
   
   //Adding a 5th marker walking path
   const image5 = "media/icon_WALK.gif";
-  const starMarker = new google.maps.Marker({
+  const walkMarker = new google.maps.Marker({
     position: {lat: 41.83642941845066, lng: -87.62652650018632},
     map: map,
     icon: image5,
