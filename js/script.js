@@ -40,7 +40,7 @@ async function initMap() {
   });
 
   
- //Polygon overlay 
+ //Polygon overlay to show IIT campus area
   const polygonCoords = [
     { lat: 41.8394663080058, lng: -87.63006892091917 },
     { lat: 41.8397379108827, lng: -87.62349671028755 },
@@ -69,7 +69,7 @@ async function initMap() {
     title: "ID - MY COLLEGE",
     animation: google.maps.Animation.DROP,
   });
-  
+  collegeMarker.addListener("click", toggleBounce);
   
  //click listener event to open info window   
   map.addListener('click', (mapsMouseEvent) =>  {
@@ -88,7 +88,9 @@ async function initMap() {
     title: "MTCC - COMMONS",
     animation: google.maps.Animation.DROP,
    });
-   
+  
+  mtccMarker.addListener("click", toggleBounce);
+  
   ////Adding a third marker
   const image3 = "media/icon_DORM.jpg";
   const dormMarker = new google.maps.Marker({
@@ -99,8 +101,9 @@ async function initMap() {
     animation: google.maps.Animation.DROP,
    });
 
+  dormMarker.addListener("click", toggleBounce);
 
-//Adding a 4th marker
+  //Adding a 4th marker
   const image4 = "media/icon_STARB.png";
   const starMarker = new google.maps.Marker({
     position: { lat: 41.831, lng: -87.626 },
@@ -109,6 +112,8 @@ async function initMap() {
     title: "STARBUCKS",
     animation: google.maps.Animation.DROP,
   });
+  
+  starMarker.addListener("click", toggleBounce);
   
   //Added biking layer
   const bikeLayer = new google.maps.BicyclingLayer();
@@ -155,5 +160,14 @@ async function initMap() {
 
 }
 
+//calling another fuction to set toggle bounce
+var marker= [collegeMarker, mtccMarker, dormMarker, starMarker]
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
 
 initMap();
