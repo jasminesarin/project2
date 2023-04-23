@@ -120,16 +120,33 @@ async function initMap() {
     { lat: 41.833, lng: -87.626 },
     { lat: 41.835, lng: -87.625 },
     { lat: 41.8376767217854, lng: -87.6282752 },
+    {lat: 41.8347434709631, lng: -87.62644779310664},
+    {lat: 41.83472514520326, lng: -87.62597555057731},
+    {lat: 41.8365796855249, lng: -87.62583781316438}, 
+    {lat: 41.83642941845066, lng: -87.62652650018632},  
+    {lat: 41.83641109318341, lng: -87.62790387425734}, 
     ];
+  
   const walkPath = new google.maps.Polyline({
     path: walkPlanCoordinates,
     geodesic: true,
-    strokeColor: "#FF0000",
+    strokeColor: "#5A5A5A",
     strokeOpacity: 1.0,
-    strokeWeight: 2,
+    strokeWeight: 3,
+   
   });
 
   walkPath.setMap(map);
+  
+  //Adding a 5th marker walking path
+  const image5 = "media/icon_WALK.gif";
+  const starMarker = new google.maps.Marker({
+    position: {lat: 41.83642941845066, lng: -87.62652650018632},
+    map: map,
+    icon: image5,
+    title: "GOING TO ID",
+    animation: google.maps.Animation.DROP,
+  });
 
 }
 
