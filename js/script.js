@@ -15,7 +15,7 @@ async function initMap() {
     center: position,
     mapId: "MAP_ID",
     
-  }); //   is a graduate school teaching systemic, human-centered design. 
+  }); //content box 
   const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
