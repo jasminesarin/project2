@@ -35,6 +35,12 @@ async function initMap() {
     ariaLabel: "ID",
   });
   
+   collegeMarker.addListener("click", () => {
+    infowindow.open({
+      anchor: collegeMarker,
+      map,
+    });   
+  });
   
     // The marker, positioned at ID
   const image = "media/icon_ID_2.png";
@@ -44,11 +50,6 @@ async function initMap() {
     icon: image,
     title: "ID"
     
- maps.Marker.addListener("click", () => {
-    infowindow.open({
-      anchor: marker,
-      map,
-    });   
   });
   
   //Adding a second marker
