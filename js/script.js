@@ -36,12 +36,12 @@ async function initMap() {
     ariaLabel: "ID",
   });
 
- //Polygon overlay
+ //Polygon overlay 
   const polygonCoords = [
-    { lat: 41.839, lng: -87.629 },
-    { lat: 41.839, lng: -87.623 },
-    { lat: 41.831, lng: -87.623 },
-    { lat: 41.830, lng: -87.629 },
+    { lat: 41.8394663080058, lng: -87.63006892091917 },
+    { lat: 41.8397379108827, lng: -87.62349671028755 },
+    { lat: 41.831046046955656, lng: -87.62984613409192 },
+    { lat: 41.831076229105406, lng: -87.62327392348134 },
   ];
   // Construct the polygon.
   const collegePolygon = new google.maps.Polygon({
