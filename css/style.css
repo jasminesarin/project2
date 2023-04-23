@@ -34,7 +34,7 @@ nav{
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   justify-content: center;
 }
@@ -69,7 +69,7 @@ main{
   width:100%;
 }
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   color: #333;
   margin-bottom: 30px;
   padding: 10px;
@@ -93,7 +93,6 @@ li {
   margin-bottom: 5px;
   color: #555;
 }
-
 .dp{
   position: relative;
   width: 100%;
@@ -123,6 +122,7 @@ li {
   height: 100%;
 }
 .intro{
+  margin-top: 30px;
   position: relative;
   width: 100%;
   float: left;
@@ -157,7 +157,7 @@ section{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .section {
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: #fff;
   padding: 0px;
   border-radius: 5px;
@@ -261,14 +261,11 @@ section{
     font-size: 20px;
     line-height: 1.8;
   }
-
+   nav ul {
+    padding: 10px;
+  }
   nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  transition: all 0.3s;
-  padding:0 10px;
+    font-size: 18px;
   }
   nav li {
   margin: 0;
@@ -282,25 +279,23 @@ section{
     padding: 40px;
   }
   #about_me{
-  margin-left:20px;
+    margin-left:20px;
  }
   .dp{
-  width: 40%;
-  margin-left:20px;
+    width: 40%;
+    margin-left:20px;
   }
  .dp img{
-  width: 100%;
+    width: 100%;
   } 
   .intro{
-  position: relative;
-  float: left;
-  margin-left:0px;
+    margin-left:0px;
   }
   .section {
-  margin-top: 30px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    margin-top: 30px;
+    padding: 20px;
+  }
+  h1 {
+  font-size: 30px;
+  }
 }
