@@ -116,15 +116,20 @@ async function initMap() {
   bikeLayer.setMap(map);
   
   //Daily path to ID
-  const walkPlanCoordinates = [
+  const walkPlanCoordinates = [//dorm-mtcc-ID
+    //dorm
     { lat: 41.833, lng: -87.626 },
-    { lat: 41.835, lng: -87.625 },
-    { lat: 41.8376767217854, lng: -87.6282752 },
+    //road
     {lat: 41.8347434709631, lng: -87.62644779310664},
     {lat: 41.83472514520326, lng: -87.62597555057731},
+    //mtcc
+    { lat: 41.835, lng: -87.625 },
+    //road2
     {lat: 41.8365796855249, lng: -87.62583781316438}, 
     {lat: 41.83642941845066, lng: -87.62652650018632},  
     {lat: 41.83641109318341, lng: -87.62790387425734}, 
+    //ID
+    { lat: 41.8376767217854, lng: -87.6282752 },
     ];
   
   const walkPath = new google.maps.Polyline({
