@@ -228,6 +228,7 @@ section{
   padding-bottom:56.25%;
   position:relative;
   height:0;
+  margin-bottom: 30px;
 }
 #info h2{
   margin-bottom: 10px;
@@ -252,7 +253,7 @@ section{
   align-items: center;
   width: 120px;
   height: 120px;
-  margin: 0 10px;
+  margin: 0 20px;
   border-radius: 50%;
   font-size: 16px;
   text-align: center;
@@ -276,3 +277,5 @@ section{
 .linkedin {
   background-color: #0077b5;
 }
+
+
