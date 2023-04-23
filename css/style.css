@@ -224,6 +224,10 @@ section{
 #map {
   height: 800px;
   width: 100%;
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
 }
 #info h2{
   margin-bottom: 10px;
