@@ -34,6 +34,8 @@ async function initMap() {
     content: contentString,
     ariaLabel: "ID",
   });
+  
+  
     // The marker, positioned at ID
   const image = "media/icon_ID_2.png";
   const collegeMarker = new google.maps.Marker({
@@ -42,6 +44,11 @@ async function initMap() {
     icon: image,
     title: "ID"
     
+ collegeMarker.addListener("click", () => {
+    infowindow.open({
+      anchor: collegeMarker,
+      map,
+    });   
   });
   
   //Adding a second marker
