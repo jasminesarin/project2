@@ -34,13 +34,7 @@ async function initMap() {
     content: contentString,
     ariaLabel: "ID",
   });
-  
-   collegeMarker.addListener("click", () => {
-    infowindow.open({
-      anchor: collegeMarker,
-      map,
-    });   
-  });
+
   
     // The marker, positioned at ID
   const image = "media/icon_ID_2.png";
@@ -49,8 +43,10 @@ async function initMap() {
     map: map,
     icon: image,
     title: "ID"
-    
+    addEventListener("click",()=>{
+    anchor:collegeMarker,}
   });
+  
   
   //Adding a second marker
   const image2 = "media/icon_MTCC.png";
@@ -83,6 +79,8 @@ async function initMap() {
     title: "STARBUCKS"
     
   });
+
+  
 }
 
 
