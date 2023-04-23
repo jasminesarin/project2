@@ -132,7 +132,7 @@ li {
 .text {
   white-space: nowrap; 
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -153,7 +153,6 @@ section{
   width: 100%;
   background-color:#fff;
   margin-left:10px;
-  padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -246,11 +245,51 @@ section{
     font-size: 18px;
     line-height: 1.6;
   }
-
-  /* Adjust width and padding of main content container */
-  main{
-    width: 80%;
-    padding: 30px;
+  
+  /* Adjust width and padding of main content  */
+  main {
+    width: 70%;
+    padding: 40px;
+  }
+    nav ul {
+    padding: 10px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+  nav li {
+    margin: 0;
+    padding: 10px;
+    font-size:16px;
+  }
+  #about_me{
+    margin-left:20px;
+  }
+  .text{
+    font-size: 30px;
+  }
+  .dp{
+    width: 40%;
+    margin-left:20px;
+  }
+ .dp img{
+    width: 100%;
+  } 
+  section{
+    width: 50%;
+    background-color:#fff;
+    margin-left:30px;
+    padding: 20px;
+  }
+  .intro{
+    margin-left:0px;
+  }
+  .section {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  h1 {
+  font-size: 30px;
   }
 }
 
@@ -279,15 +318,14 @@ section{
     width: 70%;
     padding: 40px;
   }
-  }
-  #about_me{
+   #about_me{
     margin-left:20px;
- }
+  }
   .dp{
     width: 40%;
     margin-left:20px;
   }
- .dp img{
+  .dp img{
     width: 100%;
   } 
   section{
