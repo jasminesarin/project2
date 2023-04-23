@@ -46,9 +46,10 @@ async function initMap() {
     animation: google.maps.Animation.DROP,
   });
   
-  collegeMarker.addListener("click", () => {
+    
+  map.addListener('click', (mapsMouseEvent) =>  {
     infowindow.open({
-    anchor: null,
+    anchor: collegeMarker,
     map,
     });
   });
@@ -87,6 +88,12 @@ async function initMap() {
     animation: google.maps.Animation.DROP,
     
   });
+  
+    // Show Lat/Lng from a Click Event and show them in page, inspired by sample API
+//   map.addListener('click', (mapsMouseEvent) => {
+//     const information = document.getElementById('info')
+//     info.innerText = `content`
+//   })
 }
 
 
