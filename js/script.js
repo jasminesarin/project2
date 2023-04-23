@@ -120,8 +120,7 @@ async function initMap() {
     { lat: 41.833, lng: -87.626 },
     { lat: 41.835, lng: -87.625 },
     { lat: 41.8376767217854, lng: -87.6282752 },
-    { lat: -27.467, lng: 153.027 },
-  ];
+    ];
   const walkPath = new google.maps.Polyline({
     path: walkPlanCoordinates,
     geodesic: true,
@@ -130,8 +129,8 @@ async function initMap() {
     strokeWeight: 2,
   });
 
-  flightPath.setMap(map);
-}
+  walkPath.setMap(map);
+
 }
 
 
