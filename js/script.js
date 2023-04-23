@@ -24,7 +24,7 @@ async function initMap() {
     map: map,
     icon: image,
     title: "ID"
-    label: ID,
+    label: "ID",
   });
   
   //Adding a second marker
