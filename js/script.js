@@ -40,8 +40,8 @@ async function initMap() {
   const polygonCoords = [
     { lat: 41.8394663080058, lng: -87.63006892091917 },
     { lat: 41.8397379108827, lng: -87.62349671028755 },
-    { lat: 41.831046046955656, lng: -87.62984613409192 },
     { lat: 41.831076229105406, lng: -87.62327392348134 },
+    { lat: 41.831046046955656, lng: -87.62984613409192 },
   ];
   // Construct the polygon.
   const collegePolygon = new google.maps.Polygon({
