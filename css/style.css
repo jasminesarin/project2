@@ -121,7 +121,12 @@ li {
   bottom: 0;
   height: 100%;
 }
-
+.intro{
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-left:0px;
+}
 .text {
   white-space: nowrap; 
   color: white;
@@ -263,7 +268,7 @@ section{
   font-weight: bold;
   transition: all 0.3s;
   padding:0 10px;
-}
+  }
   
   /* Adjust width and padding of main content  */
   main {
@@ -273,13 +278,18 @@ section{
   #about_me{
   margin-left:20px;
  }
-.dp{
+  .dp{
   width: 40%;
   margin-left:20px;
   }
  .dp img{
   width: 100%;
   } 
+  .intro{
+  position: relative;
+  float: left;
+  margin-left:0px;
+  }
   .section {
   margin-top: 30px;
   background-color: #fff;
