@@ -193,25 +193,23 @@ async function initMap() {
 
   // Add click event listener to each button
   socialButtons.forEach((button) => {
-    button.addEventListener('click', shareOnSocialMedia);
+    button.addEventListener('click', followOnSocialMedia);
   });
 
-  // Function to share on social media
-  function shareOnSocialMedia(event) {
-    // Get the social media network (facebook, twitter, linkedin)
+  // Function to follow on social media
+  function followOnSocialMedia(event) {
+    // Get the social media network (facebook, instagram, linkedin)
     const network = event.target.closest('.social-button').classList[1];
-    // Get the URL of the current page
-    const url = window.location.href;
-    // Open a new window with the share dialog
+    // Open a new window with the social media profile
     switch (network) {
       case 'facebook':
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, 'Share on Facebook', 'width=600,height=400');
+        window.open('https://www.facebook.com/YourFacebookPage', '_blank');
         break;
-      case 'twitter':
-        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, 'Share on Twitter', 'width=600,height=400');
+      case 'instagram':
+        window.open('https://www.instagram.com/YourInstagramPage', '_blank');
         break;
       case 'linkedin':
-        window.open(`https://www.linkedin.com/shareArticle?url=${encodeURIComponent(url)}`, 'Share on LinkedIn', 'width=600,height=400');
+        window.open('https://www.linkedin.com/company/YourLinkedInPage', '_blank');
         break;
     }
   }
