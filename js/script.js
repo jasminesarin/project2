@@ -30,11 +30,30 @@ async function initMap() {
     "https://en.wikipedia.org/wiki/IIT_Institute_of_Design</a></p>" +
     "</div>" +
     "</div>";
+  
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
     ariaLabel: "ID",
   });
 
+ //Polygon overlay
+  const polygonCoords = [
+    { lat: 41.839, lng: -87.629 },
+    { lat: 41.839, lng: -87.623 },
+    { lat: 41.831, lng: -87.623 },
+    { lat: 41.830, lng: -87.629 },
+  ];
+  // Construct the polygon.
+  const collegePolygon = new google.maps.Polygon({
+    paths: polygonCoords,
+    strokeColor: "#00FF00",
+    strokeOpacity: 0.6,
+    strokeWeight: 2,
+    fillColor: "#00FF00",
+    fillOpacity: 0.20,
+  });
+
+  collegePolygon.setMap(map);
   
     // The marker, positioned at ID
   const image = "media/icon_ID_2.png";
