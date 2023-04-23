@@ -23,7 +23,7 @@ async function initMap() {
     map: map,
     icon: image,
     title: "ID"
-    label: `${ID}`,
+    //label: `${ID}`,
   });
   
   //Adding a second marker
@@ -55,7 +55,7 @@ async function initMap() {
     map: map,
     icon: image4,
     title: "STARBUCKS"
-    label: `${COFFEE},
+    label: `${COFFEE}`,
   });
 }
 
