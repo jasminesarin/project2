@@ -1,5 +1,6 @@
 // Initialize and add the map
 let map;
+let marker;
 
 async function initMap() {
   
