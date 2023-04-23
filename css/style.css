@@ -242,7 +242,9 @@ section{
   justify-content: center;
   align-items: center;
 }
-
+.social-media h2{
+ font-size: 24px;
+}
 .social-button {
   display: flex;
   flex-direction: column;
@@ -258,11 +260,6 @@ section{
   text-decoration: none;
 }
 
-.social-button h2{
- font-size: 24px;
- justify-content: center;
- align-items: center; 
-}
 .social-button:hover {
   background-color: #666;
 }
