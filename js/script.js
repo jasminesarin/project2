@@ -187,6 +187,34 @@ async function initMap() {
     title: "GOING TO ID",
     animation: google.maps.Animation.DROP,
   });
+  
+  // Select all social media buttons
+  const socialButtons = document.querySelectorAll('.social-button');
+
+  // Add click event listener to each button
+  socialButtons.forEach((button) => {
+    button.addEventListener('click', shareOnSocialMedia);
+  });
+
+  // Function to share on social media
+  function shareOnSocialMedia(event) {
+    // Get the social media network (facebook, twitter, linkedin)
+    const network = event.target.closest('.social-button').classList[1];
+    // Get the URL of the current page
+    const url = window.location.href;
+    // Open a new window with the share dialog
+    switch (network) {
+      case 'facebook':
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, 'Share on Facebook', 'width=600,height=400');
+        break;
+      case 'twitter':
+        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, 'Share on Twitter', 'width=600,height=400');
+        break;
+      case 'linkedin':
+        window.open(`https://www.linkedin.com/shareArticle?url=${encodeURIComponent(url)}`, 'Share on LinkedIn', 'width=600,height=400');
+        break;
+    }
+  }
 }
 
 initMap();
