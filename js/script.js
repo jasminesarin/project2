@@ -3,8 +3,8 @@ let map;
 
 async function initMap() {
   
-  // The location of ID 41.83748488024708, -87.62810353863021
-  const position = { lat: 41.83748488024708, lng: -87.62810353863021 };
+  // The location of IIT 41.83501696630514, -87.62700590209543
+  const position = { lat: 41.83501696630514, lng: -87.62700590209543 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
@@ -12,7 +12,7 @@ async function initMap() {
 
   // The map, centered at ID
   map = new Map(document.getElementById("map"), {
-    zoom: 16,
+    zoom: 17,
     center: position,
     mapId: "MAP_ID",
     
