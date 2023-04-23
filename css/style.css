@@ -90,14 +90,12 @@ li {
   margin-bottom: 5px;
   color: #555;
 }
-#about_me{
-  margin-left:20px;
- }
+
 .dp{
   position: relative;
-  width: 40%;
+  width: 100%;
   float: left;
-  margin-left:20px;
+  margin-left:10px;
   }
  .dp img{
   display:block;
@@ -121,6 +119,7 @@ li {
   bottom: 0;
   height: 100%;
 }
+
 .text {
   white-space: nowrap; 
   color: white;
@@ -260,4 +259,14 @@ section{
     width: 70%;
     padding: 40px;
   }
+  #about_me{
+  margin-left:20px;
+ }
+.dp{
+  width: 40%;
+  margin-left:20px;
+  }
+ .dp img{
+  width: 100%;
+  } 
 }
