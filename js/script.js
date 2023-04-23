@@ -44,9 +44,9 @@ async function initMap() {
     icon: image,
     title: "ID"
     
- marker.addListener("click", () => {
+ icon.addListener("click", () => {
     infowindow.open({
-      anchor: marker,
+      anchor: icon,
       map,
     });   
   });
